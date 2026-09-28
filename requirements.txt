@@ -1,0 +1,5 @@
+datasets
+tokenizers
+transformers
+sacrebleu
+tqdm

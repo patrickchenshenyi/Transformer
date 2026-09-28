@@ -1,0 +1,26 @@
+name: Transformer_GPU
+channels:
+  - https://mirrors.aliyun.com/anaconda/pkgs/main/
+  - https://mirrors.aliyun.com/anaconda/pkgs/free/
+  - https://mirrors.aliyun.com/anaconda/cloud/conda-forge/
+  - defaults
+dependencies:
+- python=3.12
+- pip
+- jupyter
+- ipykernel
+- pytorch
+- torchvision  
+- torchaudio   
+- pytorch-cuda=12.4
+- transformers
+- datasets
+- tokenizers
+- accelerate
+- huggingface_hub
+- numpy
+- matplotlib
+- tqdm
+- tensorboard
+- pip:
+  - sacrebleu  

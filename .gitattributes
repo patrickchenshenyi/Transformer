@@ -1,0 +1,2 @@
+# 模型权重走 Git LFS
+*.pt filter=lfs diff=lfs merge=lfs -text

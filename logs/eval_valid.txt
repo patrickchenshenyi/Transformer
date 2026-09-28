@@ -1,0 +1,79 @@
+[dlc1mx74ehyga9vt-master-0] 开始评估最佳模型
+[dlc1mx74ehyga9vt-master-0] 
+生成译文:   0%|          | 0/19 [00:00<?, ?it/s]
+生成译文:   5%|▌         | 1/19 [00:05<01:47,  5.98s/it]
+生成译文:  11%|█         | 2/19 [00:08<01:10,  4.16s/it]
+生成译文:  16%|█▌        | 3/19 [00:12<01:01,  3.82s/it]
+生成译文:  21%|██        | 4/19 [00:15<00:52,  3.51s/it]
+生成译文:  26%|██▋       | 5/19 [00:17<00:44,  3.17s/it]
+生成译文:  32%|███▏      | 6/19 [00:20<00:37,  2.88s/it]
+生成译文:  37%|███▋      | 7/19 [00:22<00:32,  2.74s/it]
+生成译文:  42%|████▏     | 8/19 [00:27<00:37,  3.39s/it]
+生成译文:  47%|████▋     | 9/19 [00:31<00:37,  3.74s/it]
+生成译文:  53%|█████▎    | 10/19 [00:34<00:29,  3.31s/it]
+生成译文:  58%|█████▊    | 11/19 [00:36<00:23,  2.89s/it]
+生成译文:  63%|██████▎   | 12/19 [00:38<00:18,  2.62s/it]
+生成译文:  68%|██████▊   | 13/19 [00:39<00:13,  2.31s/it]
+生成译文:  74%|███████▎  | 14/19 [00:42<00:12,  2.42s/it]
+生成译文:  79%|███████▉  | 15/19 [00:45<00:10,  2.54s/it]
+生成译文:  84%|████████▍ | 16/19 [00:49<00:09,  3.17s/it]
+生成译文:  89%|████████▉ | 17/19 [00:54<00:07,  3.57s/it]
+生成译文:  95%|█████████▍| 18/19 [00:58<00:03,  3.79s/it]
+生成译文: 100%|██████████| 19/19 [01:01<00:00,  3.38s/it]
+生成译文: 100%|██████████| 19/19 [01:01<00:00,  3.22s/it]
+[dlc1mx74ehyga9vt-master-0] ============================================================
+[dlc1mx74ehyga9vt-master-0] 🔍 BLEU 诊断报告
+[dlc1mx74ehyga9vt-master-0] ============================================================
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 📝 空字符串统计:
+[dlc1mx74ehyga9vt-master-0]   空假设: 0/3000 (0.0%)
+[dlc1mx74ehyga9vt-master-0]   空参考: 0/3000 (0.0%)
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 📏 长度统计:
+[dlc1mx74ehyga9vt-master-0]   假设 - 平均: 25.0, 中位数: 22.0, 最小: 1, 最大: 98
+[dlc1mx74ehyga9vt-master-0]   参考 - 平均: 26.0, 中位数: 23.0, 最小: 1, 最大: 129
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 📄 前5个样本:
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 样本 0:
+[dlc1mx74ehyga9vt-master-0]   假设: Eine republik anische Strategie gegen die Wieder wahl Ob amas
+[dlc1mx74ehyga9vt-master-0]   参考: Eine republik anische Strategie , um der Wieder wahl von Obama entgegenzu treten
+[dlc1mx74ehyga9vt-master-0]   假设长度: 10 词
+[dlc1mx74ehyga9vt-master-0]   参考长度: 13 词
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 样本 1:
+[dlc1mx74ehyga9vt-master-0]   假设: Die republik anischen Führer haben ihre Politik durch die Notwendigkeit der Bekämpfung von Wahl betr
+[dlc1mx74ehyga9vt-master-0]   参考: Die Führungskräfte der Republik aner rechtfertigen ihre Politik mit der Notwendigkeit , den Wahl bet
+[dlc1mx74ehyga9vt-master-0]   假设长度: 17 词
+[dlc1mx74ehyga9vt-master-0]   参考长度: 18 词
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 样本 2:
+[dlc1mx74ehyga9vt-master-0]   假设: Das Brenn an Centre betrachtet dies jedoch als einen Myth os , der besagt , dass Wahl betrug in den 
+[dlc1mx74ehyga9vt-master-0]   参考: Allerdings hält das Brenn an Center letzter es für einen Myth os , indem es bekräftigt , dass der Wa
+[dlc1mx74ehyga9vt-master-0]   假设长度: 36 词
+[dlc1mx74ehyga9vt-master-0]   参考长度: 38 词
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 样本 3:
+[dlc1mx74ehyga9vt-master-0]   假设: Tatsächlich wurden in den Vereinigten Staaten innerhalb eines Jahrzehn ts nur 300 Fälle von Wahl bet
+[dlc1mx74ehyga9vt-master-0]   参考: Die Rechtsan wälte der Republik aner haben in 10 Jahren in den USA übrigens nur 300 Fälle von Wahl b
+[dlc1mx74ehyga9vt-master-0]   假设长度: 18 词
+[dlc1mx74ehyga9vt-master-0]   参考长度: 22 词
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 样本 4:
+[dlc1mx74ehyga9vt-master-0]   假设: Eines ist sicher : Diese neuen Bestimmungen werden sich negativ auf die Wahl beteiligung der Wähler 
+[dlc1mx74ehyga9vt-master-0]   参考: Ein s ist sicher : diese neuen Bestimmungen werden sich negativ auf die Wahl beteiligung auswirken .
+[dlc1mx74ehyga9vt-master-0]   假设长度: 18 词
+[dlc1mx74ehyga9vt-master-0]   参考长度: 17 词
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] 🔢 检查原始token IDs (第一个样本):
+[dlc1mx74ehyga9vt-master-0]   源文本: Gutach: Increased safety for pedestrians
+[dlc1mx74ehyga9vt-master-0]   源token IDs (前10): [12888, 3855, 29, 29013, 5692, 6952, 3818, 22626, 6576]
+[dlc1mx74ehyga9vt-master-0]   参考文本: Gutach: Noch mehr Sicherheit für Fußgänger
+[dlc1mx74ehyga9vt-master-0]   参考token IDs (前10): [12888, 3855, 29, 15025, 4328, 5831, 3876, 26773]
+[dlc1mx74ehyga9vt-master-0] 
+[dlc1mx74ehyga9vt-master-0] BLEU: 36.56
+[dlc1mx74ehyga9vt-master-0] Precisons: [90.0, 55.55555555555556, 25.0, 14.285714285714286]
+[dlc1mx74ehyga9vt-master-0] BP: 1.0
+[dlc1mx74ehyga9vt-master-0] Pod task Finish! Start Reserving!
+[dlc1mx74ehyga9vt-master-0] receive sigterm in container
+[dlc1mx74ehyga9vt-master-0] environment: line 5: kill: (28) - No such process

@@ -1,0 +1,1000 @@
+[dlcqqcjd5lc6u21e-master-0]     Found existing installation: huggingface_hub 1.1.2
+[dlcqqcjd5lc6u21e-master-0]     Uninstalling huggingface_hub-1.1.2:
+[dlcqqcjd5lc6u21e-master-0]       Successfully uninstalled huggingface_hub-1.1.2
+[dlcqqcjd5lc6u21e-master-0] 
+[dlcqqcjd5lc6u21e-master-0] Successfully installed Mako-1.3.10 alembic-1.18.4 annotated-doc-0.0.4 banal-1.0.6 colorama-0.4.6 dataset-1.6.2 greenlet-3.3.2 hf-xet-1.4.2 huggingface-hub-1.7.1 lxml-6.0.2 portalocker-3.2.0 sacrebleu-2.6.0 sqlalchemy-1.4.54 transformers-5.3.0 typer-0.24.1
+[dlcqqcjd5lc6u21e-master-0] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[dlcqqcjd5lc6u21e-worker-0] WARN: ./requirements.txt not found, skip installing requirements.
+[dlcqqcjd5lc6u21e-worker-0] Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+[dlcqqcjd5lc6u21e-worker-0] Collecting dataset (from -r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/9f/4d/f74a514b5c4efb5c1546160597715cd6096273d7173b36a3187d2afb663a/dataset-1.6.2-py2.py3-none-any.whl (18 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: tokenizers in /usr/local/lib/python3.12/dist-packages (from -r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (0.22.1)
+[dlcqqcjd5lc6u21e-worker-0] Collecting transformers (from -r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/b8/88/ae8320064e32679a5429a2c9ebbc05c2bf32cefb6e076f9b07f6d685a9b4/transformers-5.3.0-py3-none-any.whl (10.7 MB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 43.1 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Collecting sacrebleu (from -r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 4))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/06/f2/6c90ccf3ad1d09a7d662a405b274f3c93b92df59c8d6a025d26aaf34d302/sacrebleu-2.6.0-py3-none-any.whl (100 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (from -r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 5)) (4.67.1)
+[dlcqqcjd5lc6u21e-worker-0] Collecting sqlalchemy<2.0.0,>=1.3.2 (from dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/c0/8b/f45dd378f6c97e8ff9332ff3d03ecb0b8c491be5bb7a698783b5a2f358ec/SQLAlchemy-1.4.54-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 39.3 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Collecting alembic>=0.6.2 (from dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/d2/29/6533c317b74f707ea28f8d633734dbda2119bbadfc61b2f3640ba835d0f7/alembic-1.18.4-py3-none-any.whl (263 kB)
+[dlcqqcjd5lc6u21e-worker-0] Collecting banal>=1.0.1 (from dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/ae/c4/7f6e6a539cc6b2da4da3b6a58d5e6f9342c870522ee46d41f8cbd2156953/banal-1.0.6-py2.py3-none-any.whl (6.1 kB)
+[dlcqqcjd5lc6u21e-worker-0] Collecting greenlet!=0.4.17 (from sqlalchemy<2.0.0,>=1.3.2->dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/50/1f/5155f55bd71cabd03765a4aac9ac446be129895271f73872c36ebd4b04b6/greenlet-3.3.2-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (613 kB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 613.9/613.9 kB 27.9 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: huggingface-hub<2.0,>=0.16.4 in /usr/local/lib/python3.12/dist-packages (from tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (1.1.2)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (3.20.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (2025.10.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (1.2.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (0.28.1)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (25.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (6.0.3)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (1.5.4)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (0.20.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (4.15.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (4.11.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (2025.10.5)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (1.0.9)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (3.11)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (0.16.0)
+[dlcqqcjd5lc6u21e-worker-0] Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/6f/75/ca21955d6117a394a482c7862ce96216239d0e3a53133ae8510727a8bcfa/huggingface_hub-1.7.1-py3-none-any.whl (616 kB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 616.3/616.3 kB 27.3 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (2.1.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (2025.11.3)
+[dlcqqcjd5lc6u21e-worker-0] Collecting typer (from transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl (56 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (0.6.2)
+[dlcqqcjd5lc6u21e-worker-0] Collecting hf-xet<2.0.0,>=1.4.2 (from huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/3c/4c/781267da3188db679e601de18112021a5cb16506fe86b246e22c5401a9c4/hf_xet-1.4.2-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 41.6 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Collecting portalocker (from sacrebleu->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 4))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/4b/a6/38c8e2f318bf67d338f4d629e93b0b4b9af331f455f0390ea8ce4a099b26/portalocker-3.2.0-py3-none-any.whl (22 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: tabulate>=0.8.9 in /usr/local/lib/python3.12/dist-packages (from sacrebleu->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 4)) (0.9.0)
+[dlcqqcjd5lc6u21e-worker-0] Collecting colorama (from sacrebleu->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 4))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+[dlcqqcjd5lc6u21e-worker-0] Collecting lxml (from sacrebleu->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 4))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/c6/d1/232b3309a02d60f11e71857778bfcd4acbdb86c07db8260caf7d008b08f8/lxml-6.0.2-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+[dlcqqcjd5lc6u21e-worker-0]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 43.1 MB/s  0:00:00
+[dlcqqcjd5lc6u21e-worker-0] Collecting Mako (from alembic>=0.6.2->dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/87/fb/99f81ac72ae23375f22b7afdb7642aba97c00a713c217124420147681a2f/mako-1.3.10-py3-none-any.whl (78 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.12/dist-packages (from anyio->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.16.4->tokenizers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 2)) (1.3.1)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: MarkupSafe>=0.9.2 in /usr/local/lib/python3.12/dist-packages (from Mako->alembic>=0.6.2->dataset->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 1)) (3.0.3)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: click>=8.2.1 in /usr/local/lib/python3.12/dist-packages (from typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (8.3.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: rich>=12.3.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (14.2.0)
+[dlcqqcjd5lc6u21e-worker-0] Collecting annotated-doc>=0.0.2 (from typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3))
+[dlcqqcjd5lc6u21e-worker-0]   Downloading https://mirrors.aliyun.com/pypi/packages/1e/d3/26bf1008eb3d2daa8ef4cacc7f3bfdc11818d111f7e2d0201bc6e3b49d45/annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=12.3.0->typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (4.0.0)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=12.3.0->typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (2.19.2)
+[dlcqqcjd5lc6u21e-worker-0] Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->transformers->-r /mnt/oss/models/Transformer/requirements/requirements_v11.txt (line 3)) (0.1.2)
+[dlcqqcjd5lc6u21e-worker-0] Installing collected packages: banal, portalocker, Mako, lxml, hf-xet, greenlet, colorama, annotated-doc, sqlalchemy, sacrebleu, typer, alembic, huggingface-hub, dataset, transformers
+[dlcqqcjd5lc6u21e-worker-0]   Attempting uninstall: hf-xet
+[dlcqqcjd5lc6u21e-worker-0]     Found existing installation: hf-xet 1.2.0
+[dlcqqcjd5lc6u21e-worker-0]     Uninstalling hf-xet-1.2.0:
+[dlcqqcjd5lc6u21e-worker-0]       Successfully uninstalled hf-xet-1.2.0
+[dlcqqcjd5lc6u21e-worker-0]   Attempting uninstall: huggingface-hub
+[dlcqqcjd5lc6u21e-worker-0]     Found existing installation: huggingface_hub 1.1.2
+[dlcqqcjd5lc6u21e-worker-0]     Uninstalling huggingface_hub-1.1.2:
+[dlcqqcjd5lc6u21e-worker-0]       Successfully uninstalled huggingface_hub-1.1.2
+[dlcqqcjd5lc6u21e-worker-0] 
+[dlcqqcjd5lc6u21e-worker-0] Successfully installed Mako-1.3.10 alembic-1.18.4 annotated-doc-0.0.4 banal-1.0.6 colorama-0.4.6 dataset-1.6.2 greenlet-3.3.2 hf-xet-1.4.2 huggingface-hub-1.7.1 lxml-6.0.2 portalocker-3.2.0 sacrebleu-2.6.0 sqlalchemy-1.4.54 transformers-5.3.0 typer-0.24.1
+[dlcqqcjd5lc6u21e-worker-0] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[dlcqqcjd5lc6u21e-worker-0] DDP init on rank 1, world_size 2, local_rank 0
+[dlcqqcjd5lc6u21e-worker-0] 从本地加载数据集
+[dlcqqcjd5lc6u21e-master-0] DDP init on rank 0, world_size 2, local_rank 0
+[dlcqqcjd5lc6u21e-master-0] TensorBoard logs will be saved to: /mnt/oss/models/Transformer/logs/v11_4/runs_11_4/20260316-121126
+[dlcqqcjd5lc6u21e-master-0] 从本地加载数据集
+[dlcqqcjd5lc6u21e-master-0] 训练集大小: 4508785
+[dlcqqcjd5lc6u21e-master-0] 验证集大小: 3000
+[dlcqqcjd5lc6u21e-worker-0] 训练集大小: 4508785
+[dlcqqcjd5lc6u21e-worker-0] 验证集大小: 3000
+[dlcqqcjd5lc6u21e-master-0] 从 /mnt/oss/models/Transformer/checkpoints/v11_1/checkpoint_epoch014_time20260316_110826.pt 加载模型...
+[dlcqqcjd5lc6u21e-master-0] 从 epoch 14 恢复训练
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 0/14089 | Loss: 2.9505 | PPL: 19.11 | LR: 0.000075 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 100/14089 | Loss: 3.0785 | PPL: 21.73 | LR: 0.000075 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 200/14089 | Loss: 3.0783 | PPL: 21.72 | LR: 0.000075 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 300/14089 | Loss: 3.0785 | PPL: 21.73 | LR: 0.000075 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 400/14089 | Loss: 3.0786 | PPL: 21.73 | LR: 0.000074 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 500/14089 | Loss: 3.0797 | PPL: 21.75 | LR: 0.000074 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 600/14089 | Loss: 3.0812 | PPL: 21.78 | LR: 0.000074 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 700/14089 | Loss: 3.0802 | PPL: 21.76 | LR: 0.000074 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 800/14089 | Loss: 3.0828 | PPL: 21.82 | LR: 0.000074 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 900/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000074 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1000/14089 | Loss: 3.0815 | PPL: 21.79 | LR: 0.000073 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1100/14089 | Loss: 3.0799 | PPL: 21.76 | LR: 0.000073 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1200/14089 | Loss: 3.0788 | PPL: 21.73 | LR: 0.000073 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1300/14089 | Loss: 3.0802 | PPL: 21.76 | LR: 0.000073 | GPU: 3.17GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1400/14089 | Loss: 3.0791 | PPL: 21.74 | LR: 0.000073 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1500/14089 | Loss: 3.0788 | PPL: 21.73 | LR: 0.000073 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1600/14089 | Loss: 3.0795 | PPL: 21.75 | LR: 0.000072 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1700/14089 | Loss: 3.0790 | PPL: 21.74 | LR: 0.000072 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1800/14089 | Loss: 3.0792 | PPL: 21.74 | LR: 0.000072 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 1900/14089 | Loss: 3.0793 | PPL: 21.74 | LR: 0.000072 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2000/14089 | Loss: 3.0792 | PPL: 21.74 | LR: 0.000072 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2100/14089 | Loss: 3.0790 | PPL: 21.74 | LR: 0.000072 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2200/14089 | Loss: 3.0789 | PPL: 21.73 | LR: 0.000071 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2300/14089 | Loss: 3.0791 | PPL: 21.74 | LR: 0.000071 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2400/14089 | Loss: 3.0787 | PPL: 21.73 | LR: 0.000071 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2500/14089 | Loss: 3.0788 | PPL: 21.73 | LR: 0.000071 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2600/14089 | Loss: 3.0792 | PPL: 21.74 | LR: 0.000071 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2700/14089 | Loss: 3.0791 | PPL: 21.74 | LR: 0.000071 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2800/14089 | Loss: 3.0790 | PPL: 21.74 | LR: 0.000071 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 2900/14089 | Loss: 3.0795 | PPL: 21.75 | LR: 0.000070 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3000/14089 | Loss: 3.0798 | PPL: 21.75 | LR: 0.000070 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3100/14089 | Loss: 3.0799 | PPL: 21.76 | LR: 0.000070 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3200/14089 | Loss: 3.0802 | PPL: 21.76 | LR: 0.000070 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3300/14089 | Loss: 3.0805 | PPL: 21.77 | LR: 0.000070 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3400/14089 | Loss: 3.0806 | PPL: 21.77 | LR: 0.000070 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3500/14089 | Loss: 3.0812 | PPL: 21.79 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3600/14089 | Loss: 3.0816 | PPL: 21.79 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3700/14089 | Loss: 3.0818 | PPL: 21.80 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3800/14089 | Loss: 3.0819 | PPL: 21.80 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 3900/14089 | Loss: 3.0821 | PPL: 21.80 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4000/14089 | Loss: 3.0825 | PPL: 21.81 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4100/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000069 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4200/14089 | Loss: 3.0825 | PPL: 21.81 | LR: 0.000068 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4300/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000068 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4400/14089 | Loss: 3.0820 | PPL: 21.80 | LR: 0.000068 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4500/14089 | Loss: 3.0822 | PPL: 21.81 | LR: 0.000068 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4600/14089 | Loss: 3.0824 | PPL: 21.81 | LR: 0.000068 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4700/14089 | Loss: 3.0824 | PPL: 21.81 | LR: 0.000068 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4800/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000067 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 4900/14089 | Loss: 3.0825 | PPL: 21.81 | LR: 0.000067 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5000/14089 | Loss: 3.0826 | PPL: 21.82 | LR: 0.000067 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5100/14089 | Loss: 3.0822 | PPL: 21.81 | LR: 0.000067 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5200/14089 | Loss: 3.0822 | PPL: 21.81 | LR: 0.000067 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5300/14089 | Loss: 3.0824 | PPL: 21.81 | LR: 0.000067 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5400/14089 | Loss: 3.0820 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5500/14089 | Loss: 3.0820 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5600/14089 | Loss: 3.0818 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5700/14089 | Loss: 3.0818 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5800/14089 | Loss: 3.0817 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 5900/14089 | Loss: 3.0819 | PPL: 21.80 | LR: 0.000066 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6000/14089 | Loss: 3.0819 | PPL: 21.80 | LR: 0.000066 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6100/14089 | Loss: 3.0820 | PPL: 21.80 | LR: 0.000065 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6200/14089 | Loss: 3.0818 | PPL: 21.80 | LR: 0.000065 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6300/14089 | Loss: 3.0817 | PPL: 21.79 | LR: 0.000065 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6400/14089 | Loss: 3.0816 | PPL: 21.79 | LR: 0.000065 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6500/14089 | Loss: 3.0816 | PPL: 21.79 | LR: 0.000065 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6600/14089 | Loss: 3.0815 | PPL: 21.79 | LR: 0.000065 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6700/14089 | Loss: 3.0818 | PPL: 21.80 | LR: 0.000064 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6800/14089 | Loss: 3.0819 | PPL: 21.80 | LR: 0.000064 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 6900/14089 | Loss: 3.0820 | PPL: 21.80 | LR: 0.000064 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7000/14089 | Loss: 3.0823 | PPL: 21.81 | LR: 0.000064 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7100/14089 | Loss: 3.0822 | PPL: 21.81 | LR: 0.000064 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7200/14089 | Loss: 3.0825 | PPL: 21.81 | LR: 0.000064 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7300/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000064 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7400/14089 | Loss: 3.0825 | PPL: 21.81 | LR: 0.000063 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7500/14089 | Loss: 3.0826 | PPL: 21.81 | LR: 0.000063 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7600/14089 | Loss: 3.0827 | PPL: 21.82 | LR: 0.000063 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7700/14089 | Loss: 3.0828 | PPL: 21.82 | LR: 0.000063 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7800/14089 | Loss: 3.0829 | PPL: 21.82 | LR: 0.000063 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 7900/14089 | Loss: 3.0829 | PPL: 21.82 | LR: 0.000063 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8000/14089 | Loss: 3.0830 | PPL: 21.82 | LR: 0.000063 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8100/14089 | Loss: 3.0828 | PPL: 21.82 | LR: 0.000062 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8200/14089 | Loss: 3.0829 | PPL: 21.82 | LR: 0.000062 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8300/14089 | Loss: 3.0829 | PPL: 21.82 | LR: 0.000062 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8400/14089 | Loss: 3.0829 | PPL: 21.82 | LR: 0.000062 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8500/14089 | Loss: 3.0830 | PPL: 21.82 | LR: 0.000062 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8600/14089 | Loss: 3.0828 | PPL: 21.82 | LR: 0.000062 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8700/14089 | Loss: 3.0830 | PPL: 21.82 | LR: 0.000061 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8800/14089 | Loss: 3.0830 | PPL: 21.82 | LR: 0.000061 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 8900/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000061 | GPU: 3.08GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9000/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000061 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9100/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000061 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9200/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000061 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9300/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000061 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9400/14089 | Loss: 3.0831 | PPL: 21.83 | LR: 0.000060 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9500/14089 | Loss: 3.0832 | PPL: 21.83 | LR: 0.000060 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9600/14089 | Loss: 3.0832 | PPL: 21.83 | LR: 0.000060 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9700/14089 | Loss: 3.0833 | PPL: 21.83 | LR: 0.000060 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9800/14089 | Loss: 3.0834 | PPL: 21.83 | LR: 0.000060 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 9900/14089 | Loss: 3.0834 | PPL: 21.83 | LR: 0.000060 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10000/14089 | Loss: 3.0832 | PPL: 21.83 | LR: 0.000060 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10100/14089 | Loss: 3.0833 | PPL: 21.83 | LR: 0.000059 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10200/14089 | Loss: 3.0834 | PPL: 21.83 | LR: 0.000059 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10300/14089 | Loss: 3.0833 | PPL: 21.83 | LR: 0.000059 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10400/14089 | Loss: 3.0833 | PPL: 21.83 | LR: 0.000059 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10500/14089 | Loss: 3.0834 | PPL: 21.83 | LR: 0.000059 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10600/14089 | Loss: 3.0836 | PPL: 21.84 | LR: 0.000059 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10700/14089 | Loss: 3.0836 | PPL: 21.84 | LR: 0.000058 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10800/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000058 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 10900/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000058 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11000/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000058 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11100/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000058 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11200/14089 | Loss: 3.0836 | PPL: 21.84 | LR: 0.000058 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11300/14089 | Loss: 3.0836 | PPL: 21.84 | LR: 0.000058 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11400/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000057 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11500/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000057 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11600/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000057 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11700/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000057 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11800/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000057 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 11900/14089 | Loss: 3.0840 | PPL: 21.84 | LR: 0.000057 | GPU: 3.04GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12000/14089 | Loss: 3.0840 | PPL: 21.84 | LR: 0.000057 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12100/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000056 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12200/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000056 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12300/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000056 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12400/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000056 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12500/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000056 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12600/14089 | Loss: 3.0836 | PPL: 21.84 | LR: 0.000056 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12700/14089 | Loss: 3.0835 | PPL: 21.84 | LR: 0.000056 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12800/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000055 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 12900/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000055 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13000/14089 | Loss: 3.0837 | PPL: 21.84 | LR: 0.000055 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13100/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000055 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13200/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000055 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13300/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000055 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13400/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000055 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13500/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000054 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13600/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000054 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13700/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000054 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13800/14089 | Loss: 3.0839 | PPL: 21.84 | LR: 0.000054 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 13900/14089 | Loss: 3.0840 | PPL: 21.85 | LR: 0.000054 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 | Batch 14000/14089 | Loss: 3.0838 | PPL: 21.84 | LR: 0.000054 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 15 Summary: Train Loss: 3.0837 (PPL: 21.84) | Val Loss: 2.8765 (PPL: 17.75)
+[dlcqqcjd5lc6u21e-master-0] ✓ 最佳模型已保存
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点15已保存
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 0/14089 | Loss: 3.0167 | PPL: 20.42 | LR: 0.000054 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 100/14089 | Loss: 3.0624 | PPL: 21.38 | LR: 0.000053 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 200/14089 | Loss: 3.0601 | PPL: 21.33 | LR: 0.000053 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 300/14089 | Loss: 3.0555 | PPL: 21.23 | LR: 0.000053 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 400/14089 | Loss: 3.0547 | PPL: 21.21 | LR: 0.000053 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 500/14089 | Loss: 3.0548 | PPL: 21.22 | LR: 0.000053 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 600/14089 | Loss: 3.0548 | PPL: 21.22 | LR: 0.000053 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 700/14089 | Loss: 3.0538 | PPL: 21.20 | LR: 0.000053 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 800/14089 | Loss: 3.0536 | PPL: 21.19 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 900/14089 | Loss: 3.0535 | PPL: 21.19 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1000/14089 | Loss: 3.0566 | PPL: 21.25 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1100/14089 | Loss: 3.0559 | PPL: 21.24 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1200/14089 | Loss: 3.0558 | PPL: 21.24 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1300/14089 | Loss: 3.0556 | PPL: 21.23 | LR: 0.000052 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1400/14089 | Loss: 3.0558 | PPL: 21.24 | LR: 0.000052 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1500/14089 | Loss: 3.0562 | PPL: 21.25 | LR: 0.000051 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1600/14089 | Loss: 3.0556 | PPL: 21.23 | LR: 0.000051 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1700/14089 | Loss: 3.0559 | PPL: 21.24 | LR: 0.000051 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1800/14089 | Loss: 3.0561 | PPL: 21.25 | LR: 0.000051 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 1900/14089 | Loss: 3.0555 | PPL: 21.23 | LR: 0.000051 | GPU: 3.11GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2000/14089 | Loss: 3.0556 | PPL: 21.23 | LR: 0.000051 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2100/14089 | Loss: 3.0557 | PPL: 21.24 | LR: 0.000051 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2200/14089 | Loss: 3.0562 | PPL: 21.25 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2300/14089 | Loss: 3.0557 | PPL: 21.24 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2400/14089 | Loss: 3.0554 | PPL: 21.23 | LR: 0.000050 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2500/14089 | Loss: 3.0555 | PPL: 21.23 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2600/14089 | Loss: 3.0560 | PPL: 21.24 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2700/14089 | Loss: 3.0565 | PPL: 21.25 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2800/14089 | Loss: 3.0571 | PPL: 21.27 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 2900/14089 | Loss: 3.0579 | PPL: 21.28 | LR: 0.000050 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3000/14089 | Loss: 3.0577 | PPL: 21.28 | LR: 0.000049 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3100/14089 | Loss: 3.0581 | PPL: 21.29 | LR: 0.000049 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3200/14089 | Loss: 3.0579 | PPL: 21.28 | LR: 0.000049 | GPU: 3.11GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3300/14089 | Loss: 3.0578 | PPL: 21.28 | LR: 0.000049 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3400/14089 | Loss: 3.0579 | PPL: 21.28 | LR: 0.000049 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3500/14089 | Loss: 3.0581 | PPL: 21.29 | LR: 0.000049 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3600/14089 | Loss: 3.0583 | PPL: 21.29 | LR: 0.000049 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3700/14089 | Loss: 3.0589 | PPL: 21.30 | LR: 0.000048 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3800/14089 | Loss: 3.0586 | PPL: 21.30 | LR: 0.000048 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 3900/14089 | Loss: 3.0587 | PPL: 21.30 | LR: 0.000048 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4000/14089 | Loss: 3.0586 | PPL: 21.30 | LR: 0.000048 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4100/14089 | Loss: 3.0587 | PPL: 21.30 | LR: 0.000048 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4200/14089 | Loss: 3.0588 | PPL: 21.30 | LR: 0.000048 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4300/14089 | Loss: 3.0590 | PPL: 21.31 | LR: 0.000048 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4400/14089 | Loss: 3.0588 | PPL: 21.30 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4500/14089 | Loss: 3.0589 | PPL: 21.30 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4600/14089 | Loss: 3.0590 | PPL: 21.31 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4700/14089 | Loss: 3.0590 | PPL: 21.31 | LR: 0.000047 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4800/14089 | Loss: 3.0591 | PPL: 21.31 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 4900/14089 | Loss: 3.0595 | PPL: 21.32 | LR: 0.000047 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5000/14089 | Loss: 3.0595 | PPL: 21.32 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5100/14089 | Loss: 3.0596 | PPL: 21.32 | LR: 0.000047 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5200/14089 | Loss: 3.0595 | PPL: 21.32 | LR: 0.000046 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5300/14089 | Loss: 3.0596 | PPL: 21.32 | LR: 0.000046 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5400/14089 | Loss: 3.0595 | PPL: 21.32 | LR: 0.000046 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5500/14089 | Loss: 3.0600 | PPL: 21.33 | LR: 0.000046 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5600/14089 | Loss: 3.0604 | PPL: 21.34 | LR: 0.000046 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5700/14089 | Loss: 3.0607 | PPL: 21.34 | LR: 0.000046 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5800/14089 | Loss: 3.0608 | PPL: 21.35 | LR: 0.000046 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 5900/14089 | Loss: 3.0607 | PPL: 21.34 | LR: 0.000045 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6000/14089 | Loss: 3.0607 | PPL: 21.34 | LR: 0.000045 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6100/14089 | Loss: 3.0612 | PPL: 21.35 | LR: 0.000045 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6200/14089 | Loss: 3.0611 | PPL: 21.35 | LR: 0.000045 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6300/14089 | Loss: 3.0612 | PPL: 21.35 | LR: 0.000045 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6400/14089 | Loss: 3.0612 | PPL: 21.35 | LR: 0.000045 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6500/14089 | Loss: 3.0613 | PPL: 21.35 | LR: 0.000045 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6600/14089 | Loss: 3.0611 | PPL: 21.35 | LR: 0.000045 | GPU: 3.14GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6700/14089 | Loss: 3.0610 | PPL: 21.35 | LR: 0.000044 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6800/14089 | Loss: 3.0612 | PPL: 21.35 | LR: 0.000044 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 6900/14089 | Loss: 3.0614 | PPL: 21.36 | LR: 0.000044 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7000/14089 | Loss: 3.0616 | PPL: 21.36 | LR: 0.000044 | GPU: 3.12GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7100/14089 | Loss: 3.0617 | PPL: 21.36 | LR: 0.000044 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7200/14089 | Loss: 3.0619 | PPL: 21.37 | LR: 0.000044 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7300/14089 | Loss: 3.0620 | PPL: 21.37 | LR: 0.000044 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7400/14089 | Loss: 3.0619 | PPL: 21.37 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7500/14089 | Loss: 3.0621 | PPL: 21.37 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7600/14089 | Loss: 3.0620 | PPL: 21.37 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7700/14089 | Loss: 3.0622 | PPL: 21.37 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7800/14089 | Loss: 3.0623 | PPL: 21.38 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 7900/14089 | Loss: 3.0622 | PPL: 21.37 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8000/14089 | Loss: 3.0625 | PPL: 21.38 | LR: 0.000043 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8100/14089 | Loss: 3.0623 | PPL: 21.38 | LR: 0.000043 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8200/14089 | Loss: 3.0624 | PPL: 21.38 | LR: 0.000042 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8300/14089 | Loss: 3.0626 | PPL: 21.38 | LR: 0.000042 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8400/14089 | Loss: 3.0626 | PPL: 21.38 | LR: 0.000042 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8500/14089 | Loss: 3.0625 | PPL: 21.38 | LR: 0.000042 | GPU: 3.15GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8600/14089 | Loss: 3.0627 | PPL: 21.39 | LR: 0.000042 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8700/14089 | Loss: 3.0626 | PPL: 21.38 | LR: 0.000042 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8800/14089 | Loss: 3.0630 | PPL: 21.39 | LR: 0.000042 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 8900/14089 | Loss: 3.0629 | PPL: 21.39 | LR: 0.000042 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9000/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9100/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9200/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9300/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000041 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9400/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9500/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000041 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9600/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9700/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000041 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9800/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000040 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 9900/14089 | Loss: 3.0632 | PPL: 21.39 | LR: 0.000040 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10000/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000040 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10100/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000040 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10200/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000040 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10300/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000040 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10400/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000040 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10500/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000039 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10600/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000039 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10700/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000039 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10800/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000039 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 10900/14089 | Loss: 3.0632 | PPL: 21.39 | LR: 0.000039 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11000/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000039 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11100/14089 | Loss: 3.0631 | PPL: 21.39 | LR: 0.000039 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11200/14089 | Loss: 3.0632 | PPL: 21.39 | LR: 0.000039 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11300/14089 | Loss: 3.0632 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11400/14089 | Loss: 3.0634 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11500/14089 | Loss: 3.0634 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11600/14089 | Loss: 3.0634 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11700/14089 | Loss: 3.0633 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11800/14089 | Loss: 3.0634 | PPL: 21.40 | LR: 0.000038 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 11900/14089 | Loss: 3.0636 | PPL: 21.40 | LR: 0.000038 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12000/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000038 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12100/14089 | Loss: 3.0636 | PPL: 21.40 | LR: 0.000038 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12200/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000037 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12300/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000037 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12400/14089 | Loss: 3.0639 | PPL: 21.41 | LR: 0.000037 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12500/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000037 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12600/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000037 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12700/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000037 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12800/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000037 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 12900/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000037 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13000/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000036 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13100/14089 | Loss: 3.0636 | PPL: 21.40 | LR: 0.000036 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13200/14089 | Loss: 3.0635 | PPL: 21.40 | LR: 0.000036 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13300/14089 | Loss: 3.0635 | PPL: 21.40 | LR: 0.000036 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13400/14089 | Loss: 3.0635 | PPL: 21.40 | LR: 0.000036 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13500/14089 | Loss: 3.0636 | PPL: 21.40 | LR: 0.000036 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13600/14089 | Loss: 3.0637 | PPL: 21.41 | LR: 0.000036 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13700/14089 | Loss: 3.0639 | PPL: 21.41 | LR: 0.000036 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13800/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000035 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 13900/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000035 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 | Batch 14000/14089 | Loss: 3.0638 | PPL: 21.41 | LR: 0.000035 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 16 Summary: Train Loss: 3.0638 (PPL: 21.41) | Val Loss: 2.8711 (PPL: 17.66)
+[dlcqqcjd5lc6u21e-master-0] ✓ 最佳模型已保存
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点16已保存
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 0/14089 | Loss: 3.0754 | PPL: 21.66 | LR: 0.000035 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 100/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000035 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 200/14089 | Loss: 3.0451 | PPL: 21.01 | LR: 0.000035 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 300/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000035 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 400/14089 | Loss: 3.0452 | PPL: 21.01 | LR: 0.000035 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 500/14089 | Loss: 3.0453 | PPL: 21.02 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 600/14089 | Loss: 3.0458 | PPL: 21.03 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 700/14089 | Loss: 3.0453 | PPL: 21.02 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 800/14089 | Loss: 3.0459 | PPL: 21.03 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 900/14089 | Loss: 3.0463 | PPL: 21.04 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1000/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1100/14089 | Loss: 3.0450 | PPL: 21.01 | LR: 0.000034 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1200/14089 | Loss: 3.0451 | PPL: 21.01 | LR: 0.000034 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1300/14089 | Loss: 3.0462 | PPL: 21.04 | LR: 0.000034 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1400/14089 | Loss: 3.0459 | PPL: 21.03 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1500/14089 | Loss: 3.0469 | PPL: 21.05 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1600/14089 | Loss: 3.0460 | PPL: 21.03 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1700/14089 | Loss: 3.0470 | PPL: 21.05 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1800/14089 | Loss: 3.0472 | PPL: 21.06 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 1900/14089 | Loss: 3.0468 | PPL: 21.05 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2000/14089 | Loss: 3.0472 | PPL: 21.06 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2100/14089 | Loss: 3.0470 | PPL: 21.05 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2200/14089 | Loss: 3.0469 | PPL: 21.05 | LR: 0.000033 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2300/14089 | Loss: 3.0474 | PPL: 21.06 | LR: 0.000032 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2400/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000032 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2500/14089 | Loss: 3.0478 | PPL: 21.07 | LR: 0.000032 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2600/14089 | Loss: 3.0476 | PPL: 21.06 | LR: 0.000032 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2700/14089 | Loss: 3.0478 | PPL: 21.07 | LR: 0.000032 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2800/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000032 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 2900/14089 | Loss: 3.0470 | PPL: 21.05 | LR: 0.000032 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3000/14089 | Loss: 3.0470 | PPL: 21.05 | LR: 0.000032 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3100/14089 | Loss: 3.0468 | PPL: 21.05 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3200/14089 | Loss: 3.0465 | PPL: 21.04 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3300/14089 | Loss: 3.0463 | PPL: 21.04 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3400/14089 | Loss: 3.0460 | PPL: 21.03 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3500/14089 | Loss: 3.0460 | PPL: 21.03 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3600/14089 | Loss: 3.0462 | PPL: 21.04 | LR: 0.000031 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3700/14089 | Loss: 3.0462 | PPL: 21.03 | LR: 0.000031 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3800/14089 | Loss: 3.0464 | PPL: 21.04 | LR: 0.000031 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 3900/14089 | Loss: 3.0462 | PPL: 21.03 | LR: 0.000031 | GPU: 3.14GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4000/14089 | Loss: 3.0464 | PPL: 21.04 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4100/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4200/14089 | Loss: 3.0460 | PPL: 21.03 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4300/14089 | Loss: 3.0460 | PPL: 21.03 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4400/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000030 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4500/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4600/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000030 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4700/14089 | Loss: 3.0462 | PPL: 21.04 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4800/14089 | Loss: 3.0461 | PPL: 21.03 | LR: 0.000030 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 4900/14089 | Loss: 3.0463 | PPL: 21.04 | LR: 0.000029 | GPU: 3.11GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5000/14089 | Loss: 3.0463 | PPL: 21.04 | LR: 0.000029 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5100/14089 | Loss: 3.0465 | PPL: 21.04 | LR: 0.000029 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5200/14089 | Loss: 3.0463 | PPL: 21.04 | LR: 0.000029 | GPU: 3.17GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5300/14089 | Loss: 3.0466 | PPL: 21.04 | LR: 0.000029 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5400/14089 | Loss: 3.0468 | PPL: 21.05 | LR: 0.000029 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5500/14089 | Loss: 3.0468 | PPL: 21.05 | LR: 0.000029 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5600/14089 | Loss: 3.0470 | PPL: 21.05 | LR: 0.000029 | GPU: 3.18GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5700/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000029 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5800/14089 | Loss: 3.0474 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 5900/14089 | Loss: 3.0474 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6000/14089 | Loss: 3.0471 | PPL: 21.05 | LR: 0.000028 | GPU: 3.04GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6100/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6200/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000028 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6300/14089 | Loss: 3.0476 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6400/14089 | Loss: 3.0476 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6500/14089 | Loss: 3.0475 | PPL: 21.06 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6600/14089 | Loss: 3.0477 | PPL: 21.07 | LR: 0.000028 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6700/14089 | Loss: 3.0478 | PPL: 21.07 | LR: 0.000027 | GPU: 3.15GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6800/14089 | Loss: 3.0478 | PPL: 21.07 | LR: 0.000027 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 6900/14089 | Loss: 3.0478 | PPL: 21.07 | LR: 0.000027 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7000/14089 | Loss: 3.0479 | PPL: 21.07 | LR: 0.000027 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7100/14089 | Loss: 3.0477 | PPL: 21.07 | LR: 0.000027 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7200/14089 | Loss: 3.0476 | PPL: 21.06 | LR: 0.000027 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7300/14089 | Loss: 3.0473 | PPL: 21.06 | LR: 0.000027 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7400/14089 | Loss: 3.0476 | PPL: 21.06 | LR: 0.000027 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7500/14089 | Loss: 3.0477 | PPL: 21.07 | LR: 0.000027 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7600/14089 | Loss: 3.0479 | PPL: 21.07 | LR: 0.000027 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7700/14089 | Loss: 3.0482 | PPL: 21.08 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7800/14089 | Loss: 3.0482 | PPL: 21.08 | LR: 0.000026 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 7900/14089 | Loss: 3.0484 | PPL: 21.08 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8000/14089 | Loss: 3.0485 | PPL: 21.08 | LR: 0.000026 | GPU: 3.15GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8100/14089 | Loss: 3.0486 | PPL: 21.09 | LR: 0.000026 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8200/14089 | Loss: 3.0486 | PPL: 21.09 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8300/14089 | Loss: 3.0486 | PPL: 21.09 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8400/14089 | Loss: 3.0486 | PPL: 21.09 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8500/14089 | Loss: 3.0486 | PPL: 21.09 | LR: 0.000026 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8600/14089 | Loss: 3.0487 | PPL: 21.09 | LR: 0.000025 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8700/14089 | Loss: 3.0487 | PPL: 21.09 | LR: 0.000025 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8800/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000025 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 8900/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000025 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9000/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000025 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9100/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000025 | GPU: 3.39GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9200/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000025 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9300/14089 | Loss: 3.0489 | PPL: 21.09 | LR: 0.000025 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9400/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000025 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9500/14089 | Loss: 3.0490 | PPL: 21.09 | LR: 0.000025 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9600/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000024 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9700/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000024 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9800/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000024 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 9900/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000024 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10000/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000024 | GPU: 3.15GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10100/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000024 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10200/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000024 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10300/14089 | Loss: 3.0493 | PPL: 21.10 | LR: 0.000024 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10400/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000024 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10500/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000024 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10600/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10700/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10800/14089 | Loss: 3.0489 | PPL: 21.09 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 10900/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000023 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11000/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000023 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11100/14089 | Loss: 3.0493 | PPL: 21.10 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11200/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000023 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11300/14089 | Loss: 3.0493 | PPL: 21.10 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11400/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000023 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11500/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000023 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11600/14089 | Loss: 3.0495 | PPL: 21.10 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11700/14089 | Loss: 3.0496 | PPL: 21.11 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11800/14089 | Loss: 3.0496 | PPL: 21.11 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 11900/14089 | Loss: 3.0496 | PPL: 21.11 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12000/14089 | Loss: 3.0495 | PPL: 21.10 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12100/14089 | Loss: 3.0497 | PPL: 21.11 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12200/14089 | Loss: 3.0496 | PPL: 21.11 | LR: 0.000022 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12300/14089 | Loss: 3.0495 | PPL: 21.10 | LR: 0.000022 | GPU: 3.14GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12400/14089 | Loss: 3.0495 | PPL: 21.11 | LR: 0.000022 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12500/14089 | Loss: 3.0493 | PPL: 21.10 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12600/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000022 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12700/14089 | Loss: 3.0493 | PPL: 21.10 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12800/14089 | Loss: 3.0494 | PPL: 21.10 | LR: 0.000021 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 12900/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13000/14089 | Loss: 3.0492 | PPL: 21.10 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13100/14089 | Loss: 3.0491 | PPL: 21.10 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13200/14089 | Loss: 3.0490 | PPL: 21.09 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13300/14089 | Loss: 3.0489 | PPL: 21.09 | LR: 0.000021 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13400/14089 | Loss: 3.0488 | PPL: 21.09 | LR: 0.000021 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13500/14089 | Loss: 3.0489 | PPL: 21.09 | LR: 0.000021 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13600/14089 | Loss: 3.0489 | PPL: 21.09 | LR: 0.000021 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13700/14089 | Loss: 3.0490 | PPL: 21.09 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13800/14089 | Loss: 3.0490 | PPL: 21.09 | LR: 0.000020 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 13900/14089 | Loss: 3.0490 | PPL: 21.09 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 | Batch 14000/14089 | Loss: 3.0490 | PPL: 21.10 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 17 Summary: Train Loss: 3.0489 (PPL: 21.09) | Val Loss: 2.8634 (PPL: 17.52)
+[dlcqqcjd5lc6u21e-master-0] ✓ 最佳模型已保存
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点17已保存
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 0/14089 | Loss: 2.9374 | PPL: 18.87 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 100/14089 | Loss: 3.0213 | PPL: 20.52 | LR: 0.000020 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 200/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 300/14089 | Loss: 3.0342 | PPL: 20.78 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 400/14089 | Loss: 3.0326 | PPL: 20.75 | LR: 0.000020 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 500/14089 | Loss: 3.0338 | PPL: 20.78 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 600/14089 | Loss: 3.0332 | PPL: 20.76 | LR: 0.000020 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 700/14089 | Loss: 3.0339 | PPL: 20.78 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 800/14089 | Loss: 3.0317 | PPL: 20.73 | LR: 0.000019 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 900/14089 | Loss: 3.0330 | PPL: 20.76 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1000/14089 | Loss: 3.0336 | PPL: 20.77 | LR: 0.000019 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1100/14089 | Loss: 3.0338 | PPL: 20.78 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1200/14089 | Loss: 3.0347 | PPL: 20.79 | LR: 0.000019 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1300/14089 | Loss: 3.0362 | PPL: 20.83 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1400/14089 | Loss: 3.0357 | PPL: 20.81 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1500/14089 | Loss: 3.0353 | PPL: 20.81 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1600/14089 | Loss: 3.0351 | PPL: 20.80 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1700/14089 | Loss: 3.0351 | PPL: 20.80 | LR: 0.000019 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1800/14089 | Loss: 3.0350 | PPL: 20.80 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 1900/14089 | Loss: 3.0349 | PPL: 20.80 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2000/14089 | Loss: 3.0348 | PPL: 20.80 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2100/14089 | Loss: 3.0351 | PPL: 20.80 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2200/14089 | Loss: 3.0352 | PPL: 20.80 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2300/14089 | Loss: 3.0352 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2400/14089 | Loss: 3.0355 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2500/14089 | Loss: 3.0354 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2600/14089 | Loss: 3.0354 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2700/14089 | Loss: 3.0357 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2800/14089 | Loss: 3.0353 | PPL: 20.81 | LR: 0.000018 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 2900/14089 | Loss: 3.0354 | PPL: 20.81 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3000/14089 | Loss: 3.0357 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3100/14089 | Loss: 3.0359 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3200/14089 | Loss: 3.0359 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3300/14089 | Loss: 3.0358 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3400/14089 | Loss: 3.0357 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3500/14089 | Loss: 3.0358 | PPL: 20.82 | LR: 0.000017 | GPU: 3.14GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3600/14089 | Loss: 3.0361 | PPL: 20.82 | LR: 0.000017 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3700/14089 | Loss: 3.0360 | PPL: 20.82 | LR: 0.000017 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3800/14089 | Loss: 3.0357 | PPL: 20.82 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 3900/14089 | Loss: 3.0356 | PPL: 20.81 | LR: 0.000017 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4000/14089 | Loss: 3.0357 | PPL: 20.81 | LR: 0.000017 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4100/14089 | Loss: 3.0358 | PPL: 20.82 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4200/14089 | Loss: 3.0360 | PPL: 20.82 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4300/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000016 | GPU: 3.17GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4400/14089 | Loss: 3.0368 | PPL: 20.84 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4500/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000016 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4600/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4700/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4800/14089 | Loss: 3.0361 | PPL: 20.82 | LR: 0.000016 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 4900/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5000/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000016 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5100/14089 | Loss: 3.0367 | PPL: 20.84 | LR: 0.000016 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5200/14089 | Loss: 3.0364 | PPL: 20.83 | LR: 0.000016 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5300/14089 | Loss: 3.0366 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5400/14089 | Loss: 3.0366 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5500/14089 | Loss: 3.0364 | PPL: 20.83 | LR: 0.000015 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5600/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000015 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5700/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5800/14089 | Loss: 3.0362 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 5900/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6000/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000015 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6100/14089 | Loss: 3.0364 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6200/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000015 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6300/14089 | Loss: 3.0363 | PPL: 20.83 | LR: 0.000015 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6400/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000015 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6500/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6600/14089 | Loss: 3.0365 | PPL: 20.83 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6700/14089 | Loss: 3.0364 | PPL: 20.83 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6800/14089 | Loss: 3.0366 | PPL: 20.83 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 6900/14089 | Loss: 3.0368 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7000/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7100/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7200/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7300/14089 | Loss: 3.0368 | PPL: 20.84 | LR: 0.000014 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7400/14089 | Loss: 3.0368 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7500/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7600/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7700/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000014 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7800/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000013 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 7900/14089 | Loss: 3.0370 | PPL: 20.84 | LR: 0.000013 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8000/14089 | Loss: 3.0371 | PPL: 20.84 | LR: 0.000013 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8100/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000013 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8200/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8300/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000013 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8400/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8500/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8600/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8700/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8800/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 8900/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000013 | GPU: 3.18GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9000/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000013 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9100/14089 | Loss: 3.0371 | PPL: 20.84 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9200/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9300/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9400/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9500/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9600/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9700/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000012 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9800/14089 | Loss: 3.0371 | PPL: 20.84 | LR: 0.000012 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 9900/14089 | Loss: 3.0371 | PPL: 20.84 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10000/14089 | Loss: 3.0369 | PPL: 20.84 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10100/14089 | Loss: 3.0371 | PPL: 20.84 | LR: 0.000012 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10200/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10300/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10400/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000012 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10500/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10600/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10700/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10800/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 10900/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000011 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11000/14089 | Loss: 3.0371 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11100/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11200/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11300/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11400/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000011 | GPU: 3.22GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11500/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11600/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11700/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11800/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000011 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 11900/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12000/14089 | Loss: 3.0375 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12100/14089 | Loss: 3.0374 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12200/14089 | Loss: 3.0376 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12300/14089 | Loss: 3.0375 | PPL: 20.85 | LR: 0.000010 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12400/14089 | Loss: 3.0376 | PPL: 20.86 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12500/14089 | Loss: 3.0375 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12600/14089 | Loss: 3.0375 | PPL: 20.85 | LR: 0.000010 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12700/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000010 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12800/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000010 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 12900/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000010 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13000/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13100/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13200/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000010 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13300/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000010 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13400/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13500/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000009 | GPU: 3.08GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13600/14089 | Loss: 3.0372 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13700/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13800/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 13900/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 | Batch 14000/14089 | Loss: 3.0373 | PPL: 20.85 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 18 Summary: Train Loss: 3.0373 (PPL: 20.85) | Val Loss: 2.8598 (PPL: 17.46)
+[dlcqqcjd5lc6u21e-master-0] ✓ 最佳模型已保存
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点18已保存
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 0/14089 | Loss: 3.0540 | PPL: 21.20 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 100/14089 | Loss: 3.0239 | PPL: 20.57 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 200/14089 | Loss: 3.0162 | PPL: 20.41 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 300/14089 | Loss: 3.0189 | PPL: 20.47 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 400/14089 | Loss: 3.0202 | PPL: 20.50 | LR: 0.000009 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 500/14089 | Loss: 3.0230 | PPL: 20.55 | LR: 0.000009 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 600/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000009 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 700/14089 | Loss: 3.0254 | PPL: 20.60 | LR: 0.000009 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 800/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000009 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 900/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1000/14089 | Loss: 3.0275 | PPL: 20.65 | LR: 0.000008 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1100/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000008 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1200/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000008 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1300/14089 | Loss: 3.0270 | PPL: 20.63 | LR: 0.000008 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1400/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1500/14089 | Loss: 3.0273 | PPL: 20.64 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1600/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000008 | GPU: 3.11GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1700/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1800/14089 | Loss: 3.0275 | PPL: 20.65 | LR: 0.000008 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 1900/14089 | Loss: 3.0274 | PPL: 20.64 | LR: 0.000008 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2000/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2100/14089 | Loss: 3.0280 | PPL: 20.65 | LR: 0.000008 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2200/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000008 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2300/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000008 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2400/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000008 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2500/14089 | Loss: 3.0287 | PPL: 20.67 | LR: 0.000008 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2600/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2700/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2800/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 2900/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000007 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3000/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3100/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3200/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3300/14089 | Loss: 3.0280 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3400/14089 | Loss: 3.0280 | PPL: 20.66 | LR: 0.000007 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3500/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000007 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3600/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3700/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3800/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 3900/14089 | Loss: 3.0281 | PPL: 20.66 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4000/14089 | Loss: 3.0280 | PPL: 20.66 | LR: 0.000007 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4100/14089 | Loss: 3.0276 | PPL: 20.65 | LR: 0.000007 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4200/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4300/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000007 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4400/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4500/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4600/14089 | Loss: 3.0280 | PPL: 20.65 | LR: 0.000006 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4700/14089 | Loss: 3.0278 | PPL: 20.65 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4800/14089 | Loss: 3.0280 | PPL: 20.66 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 4900/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5000/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000006 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5100/14089 | Loss: 3.0287 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5200/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5300/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5400/14089 | Loss: 3.0284 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5500/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000006 | GPU: 3.07GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5600/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5700/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5800/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 5900/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6000/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6100/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000006 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6200/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000006 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6300/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6400/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6500/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6600/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6700/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6800/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 6900/14089 | Loss: 3.0284 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7000/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000005 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7100/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7200/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000005 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7300/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7400/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000005 | GPU: 3.24GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7500/14089 | Loss: 3.0281 | PPL: 20.66 | LR: 0.000005 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7600/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7700/14089 | Loss: 3.0282 | PPL: 20.66 | LR: 0.000005 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7800/14089 | Loss: 3.0285 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 7900/14089 | Loss: 3.0283 | PPL: 20.66 | LR: 0.000005 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8000/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8100/14089 | Loss: 3.0286 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8200/14089 | Loss: 3.0287 | PPL: 20.67 | LR: 0.000005 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8300/14089 | Loss: 3.0287 | PPL: 20.67 | LR: 0.000005 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8400/14089 | Loss: 3.0287 | PPL: 20.67 | LR: 0.000004 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8500/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000004 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8600/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8700/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8800/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 8900/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9000/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.23GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9100/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9200/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9300/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9400/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9500/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.14GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9600/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9700/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9800/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 9900/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10000/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000004 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10100/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10200/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10300/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000004 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10400/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000004 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10500/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000004 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10600/14089 | Loss: 3.0288 | PPL: 20.67 | LR: 0.000004 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10700/14089 | Loss: 3.0289 | PPL: 20.67 | LR: 0.000004 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10800/14089 | Loss: 3.0291 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 10900/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11000/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11100/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11200/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.25GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11300/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11400/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.15GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11500/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11600/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11700/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11800/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 11900/14089 | Loss: 3.0294 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12000/14089 | Loss: 3.0294 | PPL: 20.68 | LR: 0.000003 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12100/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12200/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12300/14089 | Loss: 3.0292 | PPL: 20.68 | LR: 0.000003 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12400/14089 | Loss: 3.0293 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12500/14089 | Loss: 3.0294 | PPL: 20.69 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12600/14089 | Loss: 3.0294 | PPL: 20.68 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12700/14089 | Loss: 3.0294 | PPL: 20.68 | LR: 0.000003 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12800/14089 | Loss: 3.0295 | PPL: 20.69 | LR: 0.000003 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 12900/14089 | Loss: 3.0295 | PPL: 20.69 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13000/14089 | Loss: 3.0297 | PPL: 20.69 | LR: 0.000003 | GPU: 3.18GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13100/14089 | Loss: 3.0296 | PPL: 20.69 | LR: 0.000003 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13200/14089 | Loss: 3.0296 | PPL: 20.69 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13300/14089 | Loss: 3.0294 | PPL: 20.69 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13400/14089 | Loss: 3.0294 | PPL: 20.69 | LR: 0.000003 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13500/14089 | Loss: 3.0294 | PPL: 20.69 | LR: 0.000002 | GPU: 3.17GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13600/14089 | Loss: 3.0294 | PPL: 20.69 | LR: 0.000002 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13700/14089 | Loss: 3.0295 | PPL: 20.69 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13800/14089 | Loss: 3.0295 | PPL: 20.69 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 13900/14089 | Loss: 3.0295 | PPL: 20.69 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 | Batch 14000/14089 | Loss: 3.0296 | PPL: 20.69 | LR: 0.000002 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 19 Summary: Train Loss: 3.0296 (PPL: 20.69) | Val Loss: 2.8582 (PPL: 17.43)
+[dlcqqcjd5lc6u21e-master-0] ✓ 最佳模型已保存
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点19已保存
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 0/14089 | Loss: 3.1046 | PPL: 22.30 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 100/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000002 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 200/14089 | Loss: 3.0230 | PPL: 20.55 | LR: 0.000002 | GPU: 3.04GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 300/14089 | Loss: 3.0217 | PPL: 20.53 | LR: 0.000002 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 400/14089 | Loss: 3.0255 | PPL: 20.60 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 500/14089 | Loss: 3.0239 | PPL: 20.57 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 600/14089 | Loss: 3.0266 | PPL: 20.63 | LR: 0.000002 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 700/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 800/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 900/14089 | Loss: 3.0280 | PPL: 20.66 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1000/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1100/14089 | Loss: 3.0284 | PPL: 20.66 | LR: 0.000002 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1200/14089 | Loss: 3.0290 | PPL: 20.68 | LR: 0.000002 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1300/14089 | Loss: 3.0289 | PPL: 20.68 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1400/14089 | Loss: 3.0279 | PPL: 20.65 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1500/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1600/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000002 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1700/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000002 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1800/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 1900/14089 | Loss: 3.0252 | PPL: 20.60 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2000/14089 | Loss: 3.0253 | PPL: 20.60 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2100/14089 | Loss: 3.0254 | PPL: 20.60 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2200/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000002 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2300/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2400/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000002 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2500/14089 | Loss: 3.0255 | PPL: 20.60 | LR: 0.000002 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2600/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000002 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2700/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000001 | GPU: 3.26GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2800/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000001 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 2900/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3000/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3100/14089 | Loss: 3.0255 | PPL: 20.61 | LR: 0.000001 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3200/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000001 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3300/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3400/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3500/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3600/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3700/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3800/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000001 | GPU: 3.30GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 3900/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4000/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000001 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4100/14089 | Loss: 3.0260 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4200/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4300/14089 | Loss: 3.0265 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4400/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4500/14089 | Loss: 3.0265 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4600/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4700/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4800/14089 | Loss: 3.0266 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 4900/14089 | Loss: 3.0269 | PPL: 20.63 | LR: 0.000001 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5000/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5100/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000001 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5200/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5300/14089 | Loss: 3.0269 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5400/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000001 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5500/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5600/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5700/14089 | Loss: 3.0270 | PPL: 20.64 | LR: 0.000001 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5800/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 5900/14089 | Loss: 3.0268 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6000/14089 | Loss: 3.0270 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6100/14089 | Loss: 3.0269 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6200/14089 | Loss: 3.0269 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6300/14089 | Loss: 3.0267 | PPL: 20.63 | LR: 0.000001 | GPU: 3.32GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6400/14089 | Loss: 3.0266 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6500/14089 | Loss: 3.0265 | PPL: 20.63 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6600/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000001 | GPU: 3.16GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6700/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6800/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000001 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 6900/14089 | Loss: 3.0264 | PPL: 20.62 | LR: 0.000001 | GPU: 3.27GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7000/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7100/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000001 | GPU: 3.12GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7200/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7300/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000001 | GPU: 3.19GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7400/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000001 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7500/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7600/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.37GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7700/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7800/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 7900/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.33GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8000/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8100/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8200/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8300/14089 | Loss: 3.0255 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8400/14089 | Loss: 3.0253 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8500/14089 | Loss: 3.0254 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8600/14089 | Loss: 3.0253 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8700/14089 | Loss: 3.0253 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8800/14089 | Loss: 3.0255 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 8900/14089 | Loss: 3.0255 | PPL: 20.60 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9000/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000000 | GPU: 3.39GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9100/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9200/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9300/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9400/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9500/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000000 | GPU: 3.31GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9600/14089 | Loss: 3.0257 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9700/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9800/14089 | Loss: 3.0256 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 9900/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.17GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10000/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.10GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10100/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10200/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10300/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10400/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10500/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10600/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.20GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10700/14089 | Loss: 3.0258 | PPL: 20.61 | LR: 0.000000 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10800/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 10900/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.35GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11000/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11100/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.34GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11200/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.28GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11300/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11400/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11500/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11600/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11700/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11800/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000000 | GPU: 3.29GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 11900/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.21GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12000/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12100/14089 | Loss: 3.0260 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12200/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12300/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12400/14089 | Loss: 3.0259 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12500/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12600/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12700/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12800/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.13GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 12900/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13000/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13100/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13200/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13300/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13400/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13500/14089 | Loss: 3.0262 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13600/14089 | Loss: 3.0263 | PPL: 20.62 | LR: 0.000000 | GPU: 3.36GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13700/14089 | Loss: 3.0261 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13800/14089 | Loss: 3.0260 | PPL: 20.62 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 13900/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 | Batch 14000/14089 | Loss: 3.0260 | PPL: 20.61 | LR: 0.000000 | GPU: 3.38GB
+[dlcqqcjd5lc6u21e-master-0] Epoch 20 Summary: Train Loss: 3.0260 (PPL: 20.61) | Val Loss: 2.8585 (PPL: 17.44)
+[dlcqqcjd5lc6u21e-master-0] ✓ 检查点20已保存
+[dlcqqcjd5lc6u21e-worker-0] [W316 20:20:05.488387254 TCPStore.cpp:138] [c10d] recvValueWithTimeout failed on SocketImpl(fd=20, addr=[dlcqqcjd5lc6u21e-worker-0]:60744, remote=[10-224-166-13.dlcqqcjd5lc6u21e-master-0.t1791079544573309.svc.cluster.local]:23456): Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+[dlcqqcjd5lc6u21e-worker-0] Exception raised from recvBytes at /opt/pytorch/pytorch/torch/csrc/distributed/c10d/Utils.hpp:697 (most recent call first):
+[dlcqqcjd5lc6u21e-worker-0] frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x88 (0x7ff0e56e6008 in /usr/local/lib/python3.12/dist-packages/torch/lib/libc10.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #1: <unknown function> + 0x5ddbffe (0x7ff108bdbffe in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #2: <unknown function> + 0x5ddd3a0 (0x7ff108bdd3a0 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #3: <unknown function> + 0x5dddae9 (0x7ff108bddae9 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #4: c10d::TCPStore::doWait(c10::ArrayRef<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x1b5 (0x7ff108bd8aa5 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #5: c10d::TCPStore::wait(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::chrono::duration<long, std::ratio<1l, 1000l> > const&) + 0x142 (0x7ff108bd8cd2 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #6: c10d::PrefixStore::wait(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x29 (0x7ff108b75c09 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cpu.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #7: <unknown function> + 0xe11a91 (0x7ff111411a91 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_python.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #8: <unknown function> + 0x3db476 (0x7ff1109db476 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_python.so)
+[dlcqqcjd5lc6u21e-worker-0] frame #9: /usr/bin/python() [0x581a6f]
+[dlcqqcjd5lc6u21e-worker-0] frame #10: _PyObject_MakeTpCall + 0x75 (0x5492f5 in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #11: _PyEval_EvalFrameDefault + 0xadf (0x5d68bf in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #12: _PyObject_Call_Prepend + 0xc2 (0x54ab42 in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #13: /usr/bin/python() [0x5a30c8]
+[dlcqqcjd5lc6u21e-worker-0] frame #14: PyObject_Call + 0x6c (0x54b47c in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #15: _PyEval_EvalFrameDefault + 0x4cb0 (0x5daa90 in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #16: PyEval_EvalCode + 0x15b (0x5d4dab in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #17: /usr/bin/python() [0x607fc2]
+[dlcqqcjd5lc6u21e-worker-0] frame #18: /usr/bin/python() [0x6b4393]
+[dlcqqcjd5lc6u21e-worker-0] frame #19: _PyRun_SimpleFileObject + 0x1aa (0x6b40fa in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #20: _PyRun_AnyFileObject + 0x4f (0x6b3f2f in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #21: Py_RunMain + 0x3b5 (0x6bbf45 in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #22: Py_BytesMain + 0x2d (0x6bba2d in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] frame #23: <unknown function> + 0x2a1ca (0x7ff11d62a1ca in /usr/lib/x86_64-linux-gnu/libc.so.6)
+[dlcqqcjd5lc6u21e-worker-0] frame #24: __libc_start_main + 0x8b (0x7ff11d62a28b in /usr/lib/x86_64-linux-gnu/libc.so.6)
+[dlcqqcjd5lc6u21e-worker-0] frame #25: _start + 0x25 (0x656a35 in /usr/bin/python)
+[dlcqqcjd5lc6u21e-worker-0] 
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979] Error waiting on exit barrier. Elapsed: 0.02310490608215332 seconds
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979] Traceback (most recent call last):
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979]   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 965, in _exit_barrier
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979]     store_util.barrier(
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979]   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/utils/store.py", line 201, in barrier
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979]     store.wait([last_member_key])
+[dlcqqcjd5lc6u21e-worker-0] E0316 20:20:05.619000 56 torch/distributed/elastic/agent/server/api.py:979] torch.distributed.DistNetworkError: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+[dlcqqcjd5lc6u21e-worker-0] Pod task Finish! Start Reserving!
+[dlcqqcjd5lc6u21e-master-0] Pod task Finish! Start Reserving!
+[dlcqqcjd5lc6u21e-master-0] receive sigterm in container
+[dlcqqcjd5lc6u21e-master-0] environment: line 5: kill: (28) - No such process
+[dlcqqcjd5lc6u21e-worker-0] receive sigterm in container
+[dlcqqcjd5lc6u21e-worker-0] environment: line 5: kill: (29) - No such process
